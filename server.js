@@ -453,6 +453,10 @@ app.get('/get-membership-ids', async (req, res) => {
   }
 });
 
+app.get('/get-msg', (req, res) => {
+    res.send("Hiiii!");
+});
+
 
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
